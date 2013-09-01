@@ -1,14 +1,6 @@
-<p id="notice"><%= notice %></p>
+<h1>Moi</h1>
+<p>Voici la page qui contient toute mes informations</p>
 
-<p>
-  <strong>Nom:</strong>
-  <%= @user.nom %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<p>Prénom: <%= @user.first_name %></p>
+<p>Nom: <%= @user.last_name %></p>
+<p>Mail: <%= @user.email %></p>
